@@ -1,0 +1,38 @@
+{
+  "name": "shifumi-backend",
+  "version": "1.0.0",
+  "author": "El Gato Loco",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "ts-node src/index.ts",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.10",
+    "@types/ws": "^8.5.4",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "concurrently": "^7.6.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "import-sort-style-module": "^6.0.0",
+    "nodemon": "^2.0.21",
+    "prettier": "^2.8.4",
+    "prettier-plugin-import-sort": "^0.0.7",
+    "ts-node": "10.7.0",
+    "typescript": "4.5.2"
+  },
+  "importSort": {
+    ".js, .jsx, .ts, .tsx": {
+      "style": "module",
+      "parser": "typescript"
+    }
+  }
+}
